@@ -38,7 +38,7 @@ The system is designed with a specific logic:
 ##  Tech Stack
 
 * **Language:** Java (Core)
-* **Concepts Used:** OOP Principles (Encapsulation, Inheritance, Polymorphism), File Handling (if you used it), Exception Handling.
+* **Concepts Used:** OOP Principles (Encapsulation, Inheritance, Polymorphism), File Handling, Exception Handling.
 
 ##  Contributors
 
