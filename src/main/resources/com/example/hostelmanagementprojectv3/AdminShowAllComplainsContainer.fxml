@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="80.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.AdminComplainBoxController">
+   <children>
+      <Label fx:id="studentID" layoutX="12.0" layoutY="2.0" prefHeight="21.0" prefWidth="669.0" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="showComplainsLabel" alignment="TOP_LEFT" layoutX="5.0" layoutY="23.0" prefHeight="50.0" prefWidth="694.0" style="-fx-background-color: #C5D3E8;" wrapText="true">
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

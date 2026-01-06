@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.AdminDashboard">
+   <children>
+      <AnchorPane fx:id="adminPortalContainer" layoutX="190.0" layoutY="106.0" prefHeight="550.0" prefWidth="720.0" AnchorPane.leftAnchor="190.0" />
+      <Text layoutX="312.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Admin Dashboard" textAlignment="CENTER" wrappingWidth="334.86322021484375">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Separator blendMode="DARKEN" layoutX="178.0" layoutY="134.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="3.0" style="-fx-background-color: orange;" />
+      <ImageView fx:id="logoImage" fitHeight="150.0" fitWidth="159.0" layoutX="17.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/The%20Nexus%20Home.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="5.0" layoutY="160.0" prefHeight="348.0" prefWidth="170.0" spacing="20.0">
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#onClickHomeButton" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #5cc0de;" text="Home">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="adminRoomApplicationsButton" mnemonicParsing="false" onAction="#onClickApplicationsButton" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #5cc0de;" text="Room Applications">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="studentInformationButton" mnemonicParsing="false" onAction="#onClickStudentInformationButton" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: #5cc0de;" text="Student Info">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="removeStudent" lineSpacing="30.0" mnemonicParsing="false" onAction="#onClickStudentRemoveButton" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #5cc0de;" text="Remove Student" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="complainButton" mnemonicParsing="false" onAction="#onClickComplainShow" prefHeight="40.0" prefWidth="194.0" style="-fx-background-color: #5cc0de;" text="Complains">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Logout" alignment="CENTER" mnemonicParsing="false" onAction="#onClickLogoutButton" prefHeight="40.0" prefWidth="214.0" style="-fx-background-color: red;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

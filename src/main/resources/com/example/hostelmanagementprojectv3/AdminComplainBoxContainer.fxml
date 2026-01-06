@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.AdminComplainBoxController">
+   <children>
+      <ScrollPane layoutX="8.0" layoutY="48.0" prefHeight="287.0" prefWidth="705.0">
+         <content>
+            <VBox fx:id="toShowComplains" prefHeight="80.0" prefWidth="700.0" />
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="188.0" layoutY="5.0" prefHeight="37.0" prefWidth="346.0" style="-fx-background-color: #508DEC;" text="Student Complains" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stID" alignment="CENTER" layoutX="43.0" layoutY="348.0" prefHeight="37.0" prefWidth="469.0" promptText="Student ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="adminReview" layoutX="43.0" layoutY="395.0" prefHeight="141.0" prefWidth="469.0" promptText="Write your Review">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="submitButton" alignment="CENTER" layoutX="534.0" layoutY="429.0" mnemonicParsing="false" onAction="#onClickSubmitButton" prefHeight="45.0" prefWidth="125.0" style="-fx-background-color: Tomato;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="24.0" prefHeight="17.0" prefWidth="144.0" style="-fx-background-color: #508DEC;" text="Total Pending Complains" textFill="WHITE" />
+      <Label fx:id="totalComplains" alignment="CENTER" layoutX="155.0" layoutY="24.0" prefHeight="17.0" prefWidth="27.0" style="-fx-background-color: #ff7843;">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2652439024390244">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.42073170731707316">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

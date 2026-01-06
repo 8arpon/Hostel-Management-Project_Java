@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="studentInformationData" prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.AdminStudentInformationShow">
+   <children>
+      <TableView fx:id="studentInformationTableView" layoutX="14.0" layoutY="70.0" prefHeight="382.0" prefWidth="689.0">
+        <columns>
+          <TableColumn fx:id="studentNameTableColumn" prefWidth="94.0" text="Name" />
+          <TableColumn fx:id="studentIDTableColumn" prefWidth="110.0" text="ID" />
+            <TableColumn fx:id="studentDepartmentTableColumn" minWidth="0.0" prefWidth="90.0" text="Department" />
+            <TableColumn fx:id="studentMobileTableColumn" minWidth="0.0" prefWidth="98.5" text="Mobile" />
+            <TableColumn fx:id="studentGenderTableColumn" prefWidth="94.0" text="Gender" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Text layoutX="16.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Registered Student: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="totalRegisteredStudent" layoutX="238.0" layoutY="23.0" prefHeight="23.0" prefWidth="111.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

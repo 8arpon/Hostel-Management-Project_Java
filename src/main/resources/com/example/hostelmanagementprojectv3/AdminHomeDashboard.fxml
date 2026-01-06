@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.AdminDashboard">
+   <children>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="57.0" prefHeight="128.0" prefWidth="691.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="totalRegisteredStudent" alignment="CENTER" prefHeight="69.0" prefWidth="243.0" style="-fx-font-family: Verdana; -fx-background-color: Tomato;" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="232.0" style="-fx-font-family: Verdana; -fx-background-color: #ffdbd6;" text="Students">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="totalApplications" alignment="CENTER" prefHeight="69.0" prefWidth="243.0" style="-fx-font-family: Verdana; -fx-background-color: Tomato;" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="232.0" style="-fx-font-family: Verdana; -fx-background-color: #ffdbd6;" text="Total Applications">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="pendingStudents" alignment="CENTER" prefHeight="69.0" prefWidth="243.0" style="-fx-font-family: Verdana; -fx-background-color: Tomato;" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="232.0" style="-fx-font-family: Verdana; -fx-background-color: #ffdbd6;" text="Pending Applications">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="203.0" prefHeight="128.0" prefWidth="691.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="totalRooms" alignment="CENTER" prefHeight="69.0" prefWidth="243.0" style="-fx-font-family: Verdana; -fx-background-color: Tomato;" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="232.0" style="-fx-font-family: Verdana; -fx-background-color: #ffdbd6;" text="Rooms">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="totalBookedRooms" alignment="CENTER" prefHeight="69.0" prefWidth="243.0" style="-fx-font-family: Verdana; -fx-background-color: Tomato;" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="232.0" style="-fx-font-family: Verdana; -fx-background-color: #ffdbd6;" text="Booked Rooms">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="totalAvailableRoom" alignment="CENTER" prefHeight="69.0" prefWidth="243.0" style="-fx-font-family: Verdana; -fx-background-color: Tomato;" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="232.0" style="-fx-font-family: Verdana; -fx-background-color: #ffdbd6;" text="Available Rooms">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

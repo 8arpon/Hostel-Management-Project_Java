@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.StudentDashboard">
+   <children>
+      <Separator layoutX="164.0" layoutY="83.0" orientation="VERTICAL" prefHeight="568.0" prefWidth="15.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <BoxBlur />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <AnchorPane fx:id="showEverythingContainer" layoutX="185.0" layoutY="88.0" prefHeight="550.0" prefWidth="726.0" style="-fx-font-size: 15;">
+         <rotationAxis>
+            <Point3D x="-3.0" z="1.0" />
+         </rotationAxis></AnchorPane>
+      <VBox alignment="CENTER" layoutX="3.0" layoutY="161.0" prefHeight="459.0" prefWidth="164.0" spacing="20.0" AnchorPane.bottomAnchor="31.0">
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#clickOnHomeButton" prefHeight="45.0" prefWidth="140.0" style="-fx-font-size: 15;" text="Home">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="appyRoomButton" mnemonicParsing="false" onAction="#clickOnApplyRoomButton" prefHeight="45.0" prefWidth="140.0" style="-fx-font-size: 15;" text="Apply Room">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changePassword" mnemonicParsing="false" onAction="#clickOnChangePassButton" prefHeight="45.0" prefWidth="140.0" style="-fx-font-size: 15;" text="Change Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="complainBoxButton" mnemonicParsing="false" onAction="#clickOnComplainBox" prefHeight="45.0" prefWidth="140.0" style="-fx-font-size: 15;" text="Complain Box">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickOnLogOutButton" prefHeight="45.0" prefWidth="140.0" style="-fx-font-size: 15; -fx-background-color: red;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="693.0" layoutY="5.0" prefHeight="75.0" prefWidth="220.0" style="-fx-background-color: #dadddb;">
+         <children>
+            <Label fx:id="studentName" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="270.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="studentID" alignment="TOP_RIGHT" prefHeight="33.0" prefWidth="270.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="324.0" layoutY="6.0" prefHeight="74.0" prefWidth="300.0" text="Student Dashboard" textAlignment="CENTER">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logoImage" fitHeight="155.0" fitWidth="160.0" layoutX="7.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/The%20Nexus%20Home.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

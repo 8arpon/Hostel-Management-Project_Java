@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="220.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hostelmanagementprojectv3.StudentDashboard">
+   <children>
+      <HBox layoutX="13.0" layoutY="14.0" prefHeight="45.0" prefWidth="675.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="180.0" style="-fx-background-color: orange;" text="Hall Name: ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="65.0" prefWidth="495.0" style="-fx-background-color: #cccccc;" text=" The Nexus Home">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="94.0" layoutY="72.0" prefHeight="147.0" prefWidth="519.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="675.0" style="-fx-background-color: #7f7f99;">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="320.0" style="-fx-background-color: Tomato;" text="Floor                    : " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="showFloor" alignment="CENTER" prefHeight="65.0" prefWidth="495.0" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="675.0" style="-fx-background-color: #7f7f99;">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="320.0" style="-fx-background-color: Tomato;" text="Room Number : " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="showRoomNumber" alignment="CENTER" prefHeight="65.0" prefWidth="495.0" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="675.0" style="-fx-background-color: #7f7f99;">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: Tomato;" text="Status                 : " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="showStatus" alignment="CENTER" prefHeight="65.0" prefWidth="495.0" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
